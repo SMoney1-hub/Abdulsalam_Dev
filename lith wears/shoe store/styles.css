@@ -1,0 +1,102 @@
+/* General Styles */ body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fff; }
+
+/* Navigation Bar */ .navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px; background: white; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); }
+
+.logo { font-size: 24px; font-weight: bold; color: black; }
+
+.navbar ul { list-style: none; display: flex; gap: 20px; padding: 0; margin: 0; }
+
+.navbar ul li { display: inline; }
+
+.navbar ul li a { text-decoration: none; color: black; font-weight: bold; }
+
+.navbar ul li a.active { color: orange; }
+
+.search-icon { font-size: 18px; cursor: pointer; }
+
+/* Hero Section */ .hero { display: flex; align-items: center; justify-content: space-between; padding: 50px; background: linear-gradient(to right, white 50%, rgb(112, 85, 26) 50%); height: 80vh; }
+
+.hero-text { width: 40%; }
+
+.hero-text h1 { font-size: 50px; margin: 0; }
+
+.bold { font-weight: bold; }
+
+.hero-text p { font-size: 18px; color: #555; margin: 20px 0; }
+
+.cta-button { background: rgb(82, 59, 18); color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; }
+
+.hero-image img { width: 500px; max-width: 100%; }
+
+/* Footer */
+.footer {
+    background: linear-gradient(to top, #1c4db7, #2176ff);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    margin-top: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+/* Wave Effect */
+.footer::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: url('wave.svg'); /* Replace with an actual wave SVG image */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}
+
+/* Footer Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffcc00;
+}
+
+/* Footer Copyright */
+.footer p {
+    font-size: 14px;
+    margin-top: 15px;
+    opacity: 0.8;
+}
